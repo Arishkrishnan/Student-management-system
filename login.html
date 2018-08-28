@@ -1,6 +1,7 @@
 
 <!------ Include the above in your HEAD tag ---------->
-<?php include('registration.php') ?>
+<?php
+ include('registration.php') ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
@@ -19,7 +20,7 @@
         <link rel="stylesheet" type="text/css" href="bootsnip.css" />
 		
     </head>
-    <body>
+    <body >
         <div class="container">
            
             <header>
@@ -33,7 +34,7 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="mysuperscript.php" autocomplete="on"> 
+                            <form  action="loginn.php" autocomplete="on" method ="post"> 
                                 <h1>Log in</h1> 
                                 <p> 
                                     <label for="username" class="uname" > Your email or username </label>
@@ -47,9 +48,9 @@
 									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
 									<label for="loginkeeping">Keep me logged in</label>
 								</p>
-                                <p class="login button"> 
-                                   <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" ></a>
-								</p>
+                                <p class="signin button"> 
+                                    <center><button type="submit" formtarget="sms1.html" >Login</button>       </center>
+								</p> 
                                 <p class="change_link">
 									Not a member yet ?
 									<a href="#toregister" class="to_register">Join us</a>
@@ -58,27 +59,27 @@
                         </div>
 
                         <div id="register" class="animate form">
-                            <form  action="mydatabase.php" autocomplete="on"> 
+                            <form  action="signupp.php" autocomplete="on" method ="post"> 
                                 <h1> Sign up </h1> 
                                 <p> 
                                     <label for="usernamesignup" class="uname" >Username</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                    <input id="usernamesignup" name="username" required="required" type="text" placeholder="mysuperusername690" />
                                 </p>
                                 <p> 
                                     <label for="emailsignup" class="youmail"  > E-mail</label>
-                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                    <input id="emailsignup" name="email" required="required" type="email" placeholder="mail@mail.com"/> 
                                 </p>
                                  <p> 
                                     <label for="mobile" class="youmail"  > Mobile number</label>
-                                    <input id="mobile" name="mobile_no" required="required" type="tel" placeholder="98XXXXXX90"/> 
+                                    <input id="mobile" name="mobile" required="required" type="tel" placeholder="98XXXXXX90"/> 
                                 </p>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" >Create password </label>
-                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <input id="passwordsignup" name="password" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
                                 <p> 
                                     <label for="passwordsignup_confirm" class="youpasswd" >Confirm password </label>
-                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <input id="passwordsignup_confirm" name="cpassword" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
                                 <p class="signin button"> 
 									<input type="submit" value="Sign up"/> 
@@ -95,4 +96,5 @@
             </section>
         </div>
     </body>
+
 </html>

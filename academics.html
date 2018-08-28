@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Student Management System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+
+    .content { display:none }
+
+
+        body {
+            padding-top: 5rem;
+        }
+
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+		button{
+		  width:200px;
+		}
+		.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+    </style>
+</head>
+
+    
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">SMS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Profile<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">LeaderBoard</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link disabled" href="#">Academics</a>
+                </li>
+                <li class="nav-item dropdown active bg-dark">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Others</a>
+                    <div class="dropdown-menu" aria -labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Placements</a>
+                        <a class="dropdown-item" href="#">Co-curricular</a>
+                        <a class="dropdown-item" href="#">Extra Curicular</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                    </div>
+                </li>
+            </ul>
+           
+                <a href="#"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">LogOut</button></a>
+           
+        </div>
+    </nav>
+
+    <!-- /.container -->
+	<center> 
+   <div class="sidenav">
+  
+ 
+ <br><br>
+  <button class="dropdown-btn">SEMESTER
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+     <a href="#">SEM1</a>
+      <a href="#">SEM2</a>
+      <a href="#">SEM3</a>
+	  <a href="#">SEM4</a>
+     <a href="#">SEM5</a>
+      <a href="#">SEM6</a>
+	  <a href="#">SEM7</a>
+      <a href="#">SEM8</a>
+	  </ul>
+  </div>
+
+
+  <div class="navigation">
+  <button class="but" type="button" id="inplant">INPLANT TRAINING</button>
+  <button type="button" class="but" id="indusvisit">INDUSTRIAL VISIT</button>
+  <button type="button" class="but" id="onecredit">ONE CREDIT</button>
+   <button type="button" class="btn btn-success" id="acadachieve">ACADEMIC ACHIEVEMENTS</button></div>
+
+  
+ </div> 
+
+
+<div id="inplantdiv" class="content">
+ <center><h2>Add New Player</h2>
+    <h1>sahdhsjd</h1>
+    </h1>
+    <form action="intern.php" method="POST"/>
+        <p>Name: <input type="text" name="name" /></p>
+        <p>Place: <input type="text" name="place" /></p>
+        <p>FromDate:<input type="text" placeholder="dd/mm/yyyy" name="from"  /></p>
+        <p>ToDate:<input type="text" placeholder="dd/mm/yyyy" name="to" /></p>
+       <p> <input type="file" name="fileToUpload" id="fileToUpload"></p>
+        <input type="submit" value="Submit" />
+    </form>
+</center>
+</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script>var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}</script>
+
+
+<script>
+
+
+    $(function() {
+  $(".but").on("click",function(e) {
+    e.preventDefault();
+    $(".content").hide();
+    $("#"+this.id+"div").show();
+  });
+});
+
+
+</script>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      
+    
+</body>
+</html>
